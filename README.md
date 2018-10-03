@@ -1,10 +1,10 @@
 # Locality Module Extractor
 
-This tool is built on top of the OWL API and implements the logic-based module extraction described in [http://www.jair.org/media/2375/live-2375-3703-jair.pdf](Modular Reuse of Ontologies: Theory and Practice"). The extractor also considers the optional inclusions of annotations, which may be attached as OWL annotation axioms or OWL individuals (e.g. some OBO ontologies).
+This tool is built on top of the OWL API and implements the logic-based module extraction described in ["Modular Reuse of Ontologies: Theory and Practice"](http://www.jair.org/media/2375/live-2375-3703-jair.pdf). The extractor also considers the optional inclusions of annotations, which may be attached as OWL annotation axioms or OWL individuals (e.g. some OBO ontologies).
 
 The module extractor was originally implemented in 2007 by Ernesto Jimenez Ruiz in collaboration with Ulrike Sattler and Thomas Schneider (IMG Group, University of Manchester), Bernardo Cuenca Grau (KRR Group), and Rafael Berlanga (TKBG group, Jaume I University of Castellon).
 
-The extractor is open-source and released under [http://www.gnu.org/licenses/lgpl.html](GNU Lesser GPL).
+The extractor is open-source and released under [GNU Lesser GPL](http://www.gnu.org/licenses/lgpl.html).
 
 
 ## References

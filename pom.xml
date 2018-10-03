@@ -21,18 +21,18 @@
    
    
    <dependencies>
-	   <!-- dependency>
+	   <dependency>
 		<groupId>net.sourceforge.owlapi</groupId>
-		<artifactId>owlapi-api</artifactId>
+		<artifactId>owlapi-distribution</artifactId>
 		<version>3.4.8</version>
-	  </dependency-->
+	  </dependency>
 	  
-	  <!-- Includes OWL API dependency -->
+	  <!--It alsio includes OWL API dependency
 	  <dependency>
 		<groupId>com.hermit-reasoner</groupId>
 		<artifactId>org.semanticweb.hermit</artifactId>
 		<version>1.3.8.4</version>
-  	</dependency>
+  	</dependency> -->
 	  
    </dependencies>
   

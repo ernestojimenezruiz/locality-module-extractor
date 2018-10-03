@@ -14,7 +14,7 @@ import org.semanticweb.owlapi.model.OWLOntologyManager;
 import uk.ac.manchester.syntactic_locality.ModuleExtractor;
 import uk.ac.manchester.syntactic_locality.ModuleExtractorManager;
 
-public class TestClass {
+public class BasicTest {
 	
 	private OWLOntologyManager onto2modularizeManager;
 	
@@ -41,7 +41,7 @@ public class TestClass {
 	
 	public static long init, fin;
 
-	public TestClass(String onto){
+	public BasicTest(String onto){
 		
 		onto2modularizeIRI=IRI.create(onto);
 		
@@ -176,7 +176,8 @@ public class TestClass {
 	 */
 	public static void main(String[] args) {
 		
-		String ontouri="file:/home/ernesto/FMA_3.0_noMTC_100702.owl";
+		String localpath="file:/tmp/";
+		String ontouri="https://raw.githubusercontent.com/ernestojimenezruiz/oaei-evaluation/master/ontologies/phenotype/2017/doid_noimports.owl";
 		
 		String moduletype;
 		
@@ -188,17 +189,16 @@ public class TestClass {
 		//Extract the lower of the upper module for the given concepts. Tends to extract rather small modules
 		moduletype="LUM";
 		
-		TestClass test = new TestClass(ontouri);
+		BasicTest test = new BasicTest(ontouri);
 		
-		String class4module;
-		//class4module="Anatomical_structure";
-		class4module="Organ";
+		String uri4module="http://purl.obolibrary.org/obo/DOID_5409";
+		String class4module="DOID_5409";
 		//class4module="Heart";
 		
 		
 		
 		//Note that if the entity has a different namespace than the ontology we should indicate the concrete namespace
-		OWLEntity entity = test.getOWLEntityFromIRI(IRI.create(test.getOntologyIRI()+ "#"+ class4module));
+		OWLEntity entity = test.getOWLEntityFromIRI(IRI.create(uri4module));
 		
 		//We extract module for given entity (we can also pass a set of owl entities)
 		init=Calendar.getInstance().getTimeInMillis();
@@ -207,7 +207,7 @@ public class TestClass {
 		System.out.println("Time Extracting Module (s): " + (double)((double)fin-(double)init)/1000.0);
 		
 		
-		test.saveModuleToPhysicalIRI(module, ontouri+class4module+moduletype+".owl");
+		test.saveModuleToPhysicalIRI(module, localpath+class4module+"-"+moduletype+".owl");
 		
 		
 		

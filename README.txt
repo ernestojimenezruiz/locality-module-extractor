@@ -2,7 +2,6 @@ LOCALITY EXTRACTOR
 
 This extractor was originally implemented in 2007 by Ernesto Jimenez Ruiz in collaboration with Ulrike Sattler and Thomas Schneider (IMG Group, University of Manchester), Bernardo Cuenca Grau (KRR Group, University of Oxford), and Rafael Berlanga (TKBG group, Jaume I University of Castellon). Currently is maintained up-to-date by the KRR group in Oxford (contact: ernesto.jimenez.ruiz@gmail.com).
 
-
 - The core class of the extractor is 'ModuleExtractor' which accepts the following parameters:
 	- OWLOntology ontology: Ontology to be modularized
 	- boolean dualConcepts Type of interpretation for concepts outside the signature (false for bottom locality module or Upper Module (UM))
@@ -31,3 +30,7 @@ Within the extractor we include two main test classes
          Module URI (optional). Default: http://krono.act.uji.es/Links/ontologies/module_Signature_File.owl
 
 - ExtractModules4AllOntologyEntities: extracts and stores a module for each class in the given ontology signature.
+
+Large ontologies may require an increase of the allocated memory and the "-DentityExpansionLimit" parameter for the JVM:
+-Xms500M -Xmx4G -DentityExpansionLimit=100000000
+

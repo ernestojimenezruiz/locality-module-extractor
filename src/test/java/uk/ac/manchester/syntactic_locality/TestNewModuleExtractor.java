@@ -42,7 +42,8 @@ public class TestNewModuleExtractor {
 		
 		
 		//LOAD ONTOLOGY		
-		ontoToModularizeIRI=IRI.create("file:/home/ernesto/ontologies/FBbt_XP.owl");
+		ontoToModularizeIRI=IRI.create("https://raw.githubusercontent.com/ernestojimenezruiz/oaei-evaluation/master/ontologies/phenotype/2017/doid_noimports.owl");
+		
 		ontologyManager = OWLManager.createOWLOntologyManager();    	
     	ontoToModularize = ontologyManager.loadOntology(ontoToModularizeIRI);
     	    	

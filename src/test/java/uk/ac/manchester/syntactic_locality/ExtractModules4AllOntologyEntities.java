@@ -66,15 +66,7 @@ private OWLOntologyManager externalOntologyManager;
 		
 		
 		//LOAD ONTOLOGY
-		//extOntoIRI=IRI.create("http://krono.act.uji.es/Links/ontologies/JIA-1.owl");
-		//extOntoIRI=IRI.create("file:/c:/Users/ernesto/ontologies/aifb_bib_mod.owl");
-		//extOntoIRI=IRI.create("file:/c:/Users/ernesto/ontologies/AceitunaMesa/table-olives-ontology.owl");
-		//extOntoIRI=IRI.create("file:/home/ernesto/LocalityExtractor/go_daily-termdb.owl");
-		//extOntoIRI=IRI.create("file:/home/ernesto/Desktop/FMADL_2_0_with_synonyms.owl");
-		extOntoIRI=IRI.create("file:/home/ernesto/ontologies/FBbt_XP.owl");
-		
-		
-		
+		extOntoIRI=IRI.create("https://raw.githubusercontent.com/ernestojimenezruiz/oaei-evaluation/master/ontologies/phenotype/2017/doid_noimports.owl");
 		
 		loadExternalOntology();
 		

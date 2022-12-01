@@ -9,6 +9,6 @@ The extractor is open-source and released under [GNU Lesser GPL](http://www.gnu.
 
 ## References
 
-- E. Jimenez-Ruiz, B. Cuenca-Grau, U. Sattler, T. Schneider and R. Berlanga. "Safe and Economic Re-Use of Ontologies: A Logic-Based Methodology and Tool Support". In Proc. of the 5th European Semantic Web Conference (ESWC 2008), Tenerife, Spain, June 2008. LNCS 5021, ISBN: 978-3-540-68233-2, pp. 185-199. [pdf](http://www.cs.ox.ac.uk/ian.horrocks/Publications/download/2008/CHKS08a.pdf).
+- E. Jimenez-Ruiz, B. Cuenca-Grau, U. Sattler, T. Schneider and R. Berlanga. "Safe and Economic Re-Use of Ontologies: A Logic-Based Methodology and Tool Support". In Proc. of the 5th European Semantic Web Conference (ESWC 2008), Tenerife, Spain, June 2008. LNCS 5021, ISBN: 978-3-540-68233-2, pp. 185-199. [pdf](http://www.cs.man.ac.uk/~schneidt/publ/safe-eco-reuse-report.pdf)
 
-- B. Cuenca Grau‚ I. Horrocks‚ Y. Kazakov and U. Sattler. Modular Reuse of Ontologies: Theory and Practice. In J. of Artificial Intelligence Research (JAIR). Vol. 31. Pages 273−318. 2008. [pdf](http://www.jair.org/media/2375/live-2375-3703-jair.pdf)
+- B. Cuenca Grau‚ I. Horrocks‚ Y. Kazakov and U. Sattler. Modular Reuse of Ontologies: Theory and Practice. In J. of Artificial Intelligence Research (JAIR). Vol. 31. Pages 273−318. 2008. [pdf](http://www.cs.ox.ac.uk/ian.horrocks/Publications/download/2008/CHKS08a.pdf)
